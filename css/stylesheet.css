@@ -1,0 +1,8 @@
+a:hover{
+text-decoration: none;
+color: Blue;
+text-decoration-style: solid;
+}
+a:link{
+  color: #000800;
+}
