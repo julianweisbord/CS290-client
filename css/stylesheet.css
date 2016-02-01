@@ -2,6 +2,8 @@ body{
 background-color: #808080;
 }
 
+.sitename { font-size: 5em }
+
 .button{
 border-radius: 5px;
 border: solid black;
@@ -36,7 +38,7 @@ margin-bottom: -0.2em;
 to not be affected by these presets*/
  .navbar{
     list-style-type: none;
-    margin: 0;
+    margin-top: 1em;
     padding: 0;
     overflow: hidden;
     background-color: #333;
