@@ -6,12 +6,12 @@
   </head>
   <body>
     <br><br>
-    <left class="sitename">BeaverBooks</h1></left>
+    <left class="sitename">BEAVERBOOKS</h1></left>
 
     <ul class="navbar">
-      <li><a href="./index.html">Home</a></li>
-  <!--    <li><a href="./login.html">Login</a></li> -->
-      <li><a href="./booksell.html">Sell Your Book</a></li>
+      <li><a href="./home.php">Home</a></li>
+      <li><a href="./yourbooks.html">Your Books</a></li>
+      <li><a href="./booksell.html">Sell A Book</a></li>
       <li class="active"><a href="./searchpage.html">Search Books</a></li>
       <li><a href="./locationpage.html">Books Near You</a></li>
       <li><a href="./about.html">About</a></li>
@@ -21,10 +21,13 @@
 
     <center><h1> Search </h1></center>
 
+    <div class="ui divider"></div>
+
       <div class="textbody">
-        <p>Here we will let the user search for the book they want,
+        <center><p>Here we will let the user search for the book they want,
         with multiple forms and options for how they want to search.
-        The results will be displayed on the same page below these fields</p>
+        The results will be displayed on the same page below these fields</p></center>
+        <br>
 
         <div class="ui form">
           <div class="fields">
@@ -36,8 +39,6 @@
               <label>Course Number</label>
               <input type="text" placeholder="e.g. 111">
             </div>
-          </div>
-          <div class="fields">
             <div class="field">
               <label>Book Title</label>
               <input type="text" placeholder="Book Title">
@@ -47,8 +48,39 @@
               <input type="text" placeholder="Author">
             </div>
           </div>
+          <button class="ui positive button">
+            <center><i class="search icon"></i></center>
+          </button>
         </div>
 
+      </div>
+      <br>
+
+      <div align="right" position="absolute">
+        <a href="./booksell.html">
+          <button class="circular ui icon button one">
+            <i class="plus icon"></i>
+            <p>Sell A Book</p>
+          </button>
+        </a>
+        <a href="yourbooks.html">
+          <button class="circular ui icon button two">
+            <i class="book icon"></i>
+            <p>Your Books</p>
+          </button>
+        </a>
+        <a href="searchpage.html">
+          <button class="circular ui icon button three">
+            <i class="search icon"></i>
+            <p>Search</p>
+          </button>
+        </a>
+        <a href="locationpage.html">
+          <button class="circular ui icon button four">
+            <i class="location arrow icon"></i>
+            <p>Near You</p>
+          </button>
+        </a>
       </div>
 
   </body>
