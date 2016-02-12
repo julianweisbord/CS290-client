@@ -1,3 +1,5 @@
+
+
 <html>
   <head>
     <title>About</title>
@@ -10,8 +12,8 @@
 
     <center><ul class="navbar">
       <li><a href="./home.php">Home</a></li>
-      <li class="active"><a href="./about.html">About</a></li>
-      <li style="float:right"><a href="./welcome.html">Logout</a></li>
+      <li class="active"><a href="./about.php">About</a></li>
+      <li style="float:right"><a href="./logout.php">Logout</a></li>
     </ul></center>
 
     <center><h1>About</h1></center>
@@ -19,7 +21,7 @@
     <div class="ui divider"></div>
 
       <center><div class="textbody">
-        <h2>Creators</h2><br>
+        <h2><u>Creators</u></h2>
         <h3>Julian Weisbord</h3>
         <h3>Bradley Imai</h3>
         <h3>Omeed Habibelahian</h3>
