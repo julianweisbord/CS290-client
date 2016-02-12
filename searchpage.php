@@ -59,25 +59,25 @@
       <br>
 
       <div align="right" position="absolute">
-        <a href="./booksell.html">
+        <a href="./booksell.php">
           <button class="circular ui icon button one">
             <i class="plus icon"></i>
             <p>Sell A Book</p>
           </button>
         </a>
-        <a href="yourbooks.html">
+        <a href="./yourbooks.php">
           <button class="circular ui icon button two">
             <i class="book icon"></i>
             <p>Your Books</p>
           </button>
         </a>
-        <a href="searchpage.html">
+        <a href="./searchpage.php">
           <button class="circular ui icon button three">
             <i class="search icon"></i>
             <p>Search</p>
           </button>
         </a>
-        <a href="locationpage.html">
+        <a href="./locationpage.php">
           <button class="circular ui icon button four">
             <i class="location arrow icon"></i>
             <p>Near You</p>
