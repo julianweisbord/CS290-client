@@ -12,6 +12,10 @@
 
     <center><ul class="navbar">
       <li><a href="./home.php">Home</a></li>
+      <li><a href="./yourbooks.php">Your Books</a></li>
+      <li><a href="./booksell.php">Sell A Book</a></li>
+      <li><a href="./searchpage.php">Search Books</a></li>
+      <li><a href="./locationpage.php">Books Near You</a></li>
       <li class="active"><a href="./about.php">About</a></li>
       <li style="float:right"><a href="./logout.php">Logout</a></li>
     </ul></center>
@@ -33,32 +37,6 @@
 
     </div>
 
-    <div align="right" position="absolute">
-      <a href="./booksell.php">
-        <button class="circular ui icon button one">
-          <i class="plus icon"></i>
-          <p>Sell A Book</p>
-        </button>
-      </a>
-      <a href="./yourbooks.php">
-        <button class="circular ui icon button two">
-          <i class="book icon"></i>
-          <p>Your Books</p>
-        </button>
-      </a>
-      <a href="./searchpage.php">
-        <button class="circular ui icon button three">
-          <i class="search icon"></i>
-          <p>Search</p>
-        </button>
-      </a>
-      <a href="./locationpage.php">
-        <button class="circular ui icon button four">
-          <i class="location arrow icon"></i>
-          <p>Near You</p>
-        </button>
-      </a>
-    </div>
 
   </body>
 </html>
