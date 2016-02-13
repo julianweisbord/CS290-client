@@ -34,12 +34,49 @@
 
 			<div class="ui divider"></div>
 
-      <div class="textbody">
-        <center><p> This is where we put stuff, like recents </p></center>
-      </div>
-			<br>
+			<div class="ui relaxed grid books">
+				<script>
+				var prices = [60, 47, 35, 58, 47, 26, 86, 37, 42, 47, 37, 35, 46, 31, 73, 53];
+				var i = 0;
+				</script>
+				<?php
+				$x = 13;
+				for ($i = 0; $i < 4; $i++) {
+				?>
+				<div class="four column row">
+					<?php
+					for ($j = 0; $j < 4; $j++) {
+					 ?>
+					<div class="column">
+						<div class="ui card books" data-content="Edit" data-variation="basic">
+							<div class="image crop">
+								<img src="http://cdn.innovativelanguage.com/wordlists/media/thumb/14441_fit512.jpg">
+							</div>
+							<div class="content">
+								<div class="header">Example Book</div>
+								<div class="meta">
+									<span class="date">Posted: February <?php echo($x) ?>, 2016</span>
+								</div>
+								<div class="description">
+									Book description goes here.
+								</div>
+								<h3>$<script> document.write(prices[i]) </script></h3>
+							</div>
+							<div class="extra content">
+								<a><b>View Book</b></a>
+							</div>
+						</div>
+					</div>
+					<script> i++ </script>
+					<?php	} ?>
+				</div>
+				<?php
+				$x--;
+				}
+				?>
+			</div>
 
-			<div align="right" position="absolute">
+			<div class="quicknav">
 				<a href="./booksell.php">
 					<button class="circular ui icon button one">
 						<i class="plus icon"></i>

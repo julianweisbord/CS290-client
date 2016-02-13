@@ -42,7 +42,7 @@
     </div>
     <br>
 
-    <div align="right" position="absolute">
+    <div class="quicknav">
       <a href="./booksell.php">
         <button class="circular ui icon button one">
           <i class="plus icon"></i>

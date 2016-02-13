@@ -27,9 +27,45 @@
     <div class="textbody">
       <center><p>Here you will see the books you have put up for sale and can add or remove books.</p></center>
     </div>
-    <br>
 
-    <div align="right" position="absolute">
+		<div class="ui relaxed grid books">
+			<script>
+			var prices = [35, 30, 45, 60];
+			var dates = [13, 13, 13, 9];
+			var i = 0;
+			</script>
+			<div class="four column row">
+				<?php
+				for ($x = 0; $x < 4; $x++) {
+				?>
+				<div class="column">
+					<div class="ui card books" data-content="Edit" data-variation="basic">
+						<div class="image crop">
+							<img src="http://cdn.innovativelanguage.com/wordlists/media/thumb/14441_fit512.jpg">
+						</div>
+						<div class="content">
+							<div class="header">Example Book <script> document.write(i+1) </script></div>
+							<div class="meta">
+								<span class="date">Posted: February <script> document.write(dates[i]) </script>, 2016</span>
+							</div>
+							<div class="description">
+								Book description goes here.
+							</div>
+							<h3>$<script> document.write(prices[i]) </script></h3>
+						</div>
+						<div class="extra content">
+							<a><b>Edit</b></a>
+						</div>
+					</div>
+				</div>
+				<script> i++ </script>
+				<?php } ?>
+			</div>
+		</div>
+
+		<br>
+
+    <div class="quicknav">
       <a href="./booksell.php">
         <button class="circular ui icon button one">
           <i class="plus icon"></i>
