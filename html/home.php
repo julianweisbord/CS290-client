@@ -20,11 +20,11 @@
     <div>
       <ul class="navbar">
         <li class="active"><a href="./home.php">Home</a></li>
-				<li><a href="./yourbooks.php">Your Books</a></li>
-        <li><a href="./booksell.php">Sell A Book</a></li>
-        <li><a href="./searchpage.php">Search Books</a></li>
-        <li><a href="./locationpage.php">Books Near You</a></li>
-        <li><a href="./about.php">About</a></li>
+				<li><a href="./yourbooks.html">Your Books</a></li>
+        <li><a href="./booksell.html">Sell A Book</a></li>
+        <li><a href="./searchpage.html">Search Books</a></li>
+        <li><a href="./locationpage.html">Books Near You</a></li>
+        <li><a href="./about.html">About</a></li>
         <li style="float:right"><a href="./logout.php">Logout</a></li>
       </ul>
 
