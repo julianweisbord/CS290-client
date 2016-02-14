@@ -29,17 +29,23 @@
       <center><p>Here we will use the google maps api with updates to the locations of
         where people are selling their books</p>
 
-        <button class="ui positive button">Current Location</button>
+        <button class="ui positive button" id = "current" onclick = "map(1)">Current Location</button>
         <br><br>
         <div class="ui basic label">OR</div>
         <br><br>
         <div class="ui form">
           <div class="four wide field">
             <label>Zip Code</label>
-            <input type="text" placeholder="Zip Code">
+            <input type="text" placeholder="Zip Code" id="zip">
+            <button type = "button" onclick = "map(2)">submit</button>
           </div>
+          <p id= "mapGoesHere"></p>
         </div></center>
     </div>
+
+    <script src= "./css/googleScript.js"></script>
+
+
     <br>
 
     <div class="quicknav">
