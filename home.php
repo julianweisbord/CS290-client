@@ -33,7 +33,7 @@
       <div>
         <center><h1>Recent Posts</h1></center>
       </div>
-			<div></div>
+
 			<div class="ui divider"></div>
 
 			<div class="ui relaxed grid">
