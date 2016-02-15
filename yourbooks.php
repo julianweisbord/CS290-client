@@ -24,10 +24,6 @@
 
     <div class="ui divider"></div>
 
-    <div class="textbody">
-      <center><p>Here you will see the books you have put up for sale and can add or remove books.</p></center>
-    </div>
-
 		<div class="ui relaxed grid books">
 			<script>
 			var prices = [35, 30, 45, 60];

@@ -49,6 +49,19 @@
               <label>Author</label>
               <input type="text" placeholder="Author">
             </div>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="price">
+              <i class="dropdown icon"></i>
+              <div class="default text">Price</div>
+              <div class="menu">
+                <div class="item" data-value="5">Less than $20</div>
+                <div class="item" data-value="4">$20-$39</div>
+                <div class="item" data-value="3">$40-$59</div>
+                <div class="item" data-value="2">$60-$79</div>
+                <div class="item" data-value="1">$80-$99</div>
+                <div class="item" data-value="0">$100 or more</div>
+              </div>
+            </div>
           </div>
           <button class="ui positive button">
             <p>Search</p>

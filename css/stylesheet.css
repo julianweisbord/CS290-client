@@ -46,6 +46,9 @@ font-size: 20px;
   right: .5em;
 }
 
+.on {visibility: visible}
+.off {visibility: hidden}
+
 .image.crop {
   width: auto;
   height: 150px;

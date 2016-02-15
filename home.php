@@ -34,7 +34,7 @@
 
 			<div class="ui divider"></div>
 
-			<div class="ui relaxed grid books">
+			<div class="ui relaxed grid">
 				<script>
 				var prices = [60, 47, 35, 58, 47, 26, 86, 37, 42, 47, 37, 35, 46, 31, 73, 53];
 				var i = 0;
@@ -46,7 +46,7 @@
 				<div class="four column row">
 					<?php
 					for ($j = 0; $j < 4; $j++) {
-					 ?>
+					?>
 					<div class="column">
 						<div class="ui card books" data-content="Edit" data-variation="basic">
 							<div class="image crop">
@@ -75,6 +75,17 @@
 				}
 				?>
 			</div>
+
+			<script>
+			if ($(window).scrollTop() > 150) {
+				$('quicknav').removeClass("off");
+				$('quicknav').addClass("on");
+			}
+			else {
+				$('quicknav').removeClass("on");
+				$('quicknav').addClass("off");
+			}
+			</script>
 
 			<div class="quicknav">
 				<a href="./booksell.php">
