@@ -1,55 +1,5 @@
 <!DOCTYPE html>
-<script src="./js-samples/markeranimations/markeranimations.html"></script>
-
-<script>
-$("button:last").click(function() {makemap()});
-
-function makemap() {
-	var markers = [];
-
-	var stockholm = new google.maps.LatLng(59.312608,18.070107);
-	var mapOptions = {
-		zoom: 12,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		center: stockholm
-	};
-
-	var map = new google.maps.Map(document.getElementById("map_canvas"),
-					mapOptions);
-
-	function drop5() {
-		var sw = map.getBounds().getSouthWest();
-		var ne = map.getBounds().getNorthEast();
-		for (var i = 0; i < 5; i++) {
-			setTimeout(function() {
-				var lat = Math.random() * (ne.lat() - sw.lat()) + sw.lat();
-				var lng = Math.random() * (ne.lng() - sw.lng()) + sw.lng();
-				markers.push(new google.maps.Marker({
-					position: new google.maps.LatLng(lat, lng),
-					map: map,
-					draggable: true,
-					animation: google.maps.Animation.DROP
-				}));
-			}, i * 200);
-		}
-	}
-	document.getElementById("drop5").onclick = drop5;
-
-	document.getElementById("bounce").onclick = function() {
-		for (var i = 0; i < markers.length; i++) {
-			markers[i].setAnimation(google.maps.Animation.BOUNCE);
-		}
-	};
-
-	document.getElementById("stop").onclick = function() {
-		for (var i = 0; i < markers.length; i++) {
-			markers[i].setAnimation(null);
-		}
-	};
-
-	google.maps.event.addListenerOnce(map, 'tilesloaded', drop5);
-}
-</script>
+<script src="./js-samples"></script>
 
 <html>
   <head>
@@ -116,9 +66,29 @@ function makemap() {
             <input type="text" placeholder="Zip Code">
           </div>
 					<button class="ui positive button">Submit</button>
-        </div></center>
+        </div>
+
+			</center>
     </div>
-    <br>
+
+		<div id="map"></div>
+		<script>
+		function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: {lat: 44.5638754, lng: -123.2798948},
+				zoom: 14
+			});
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+			async defer></script>
+
+		<script>
+		$("button:last").click(function() {initialize()});
+		</script>
+
+		<br><br>
 
   </body>
 </html>

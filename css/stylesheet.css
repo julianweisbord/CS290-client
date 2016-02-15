@@ -40,6 +40,13 @@ font-size: 20px;
 .circular.ui.icon.button.three {background: #98FB98}
 .circular.ui.icon.button.four {background: #FFFF00}
 
+#map {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+}
+
 .quicknav {
   position: fixed;
   top: .5em;
