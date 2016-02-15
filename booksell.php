@@ -27,7 +27,7 @@
     <div class="textbody">
 
       <div class="ui form">
-        <div class="fields">
+        <div class="fields book">
           <div class="field">
             <label>Subject</label>
             <input type="text" placeholder="e.g. MTH or math">
@@ -47,6 +47,10 @@
           <div class="field">
             <label>Price</label>
             <input type="text" placeholder="Price">
+          </div>
+          <div class="field">
+            <label>ISBN Number</label>
+            <input type="text" placeholder="ISBN">
           </div>
         </div>
         <div>

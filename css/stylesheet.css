@@ -47,6 +47,12 @@ font-size: 20px;
   background-color: #CCC;
 }
 
+.fields.book {margin: auto}
+
+.ui.card.books {margin: auto}
+
+
+
 .quicknav {
   position: fixed;
   top: .5em;

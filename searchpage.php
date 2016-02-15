@@ -32,7 +32,7 @@
         <br>
 
         <div class="ui form">
-          <div class="fields">
+          <div class="fields book">
             <div class="field">
               <label>Subject</label>
               <input type="text" placeholder="e.g. MTH or math">
@@ -49,7 +49,11 @@
               <label>Author</label>
               <input type="text" placeholder="Author">
             </div>
-            <div class="ui selection dropdown">
+            <div class="field">
+              <label>ISBN Number</label>
+              <input type="text" placeholder="ISBN">
+            </div>
+          <!--  <div class="ui selection dropdown">
               <input type="hidden" name="price">
               <i class="dropdown icon"></i>
               <div class="default text">Price</div>
@@ -61,7 +65,12 @@
                 <div class="item" data-value="1">$80-$99</div>
                 <div class="item" data-value="0">$100 or more</div>
               </div>
-            </div>
+            </div> -->
+            <select class="ui dropdown">
+              <option value="">Gender</option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
           </div>
           <button class="ui positive button">
             <p>Search</p>
