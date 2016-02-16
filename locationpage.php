@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <script src="./js-samples"></script>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
 
 <html>
   <head>
@@ -56,16 +57,14 @@
       <center><p>Here we will use the google maps api with updates to the locations of
         where people are selling their books</p>
 
-        <button class="ui positive button">Current Location</button>
-        <br><br>
-        <div class="ui basic label">OR</div>
-        <br><br>
         <div class="ui form">
-          <div class="four wide field">
-            <label>Zip Code</label>
-            <input type="text" placeholder="Zip Code">
-          </div>
-					<button class="ui positive button">Submit</button>
+          <form action="/search" method="get">
+            <div class="four wide field">
+              <label>Zip Code</label>
+              <input type="text" placeholder="Zip Code">
+            </div>
+            <button class="ui positive button" onclick="map.data.loadGeoJson('../CS290-server/books.json')">Submit</button>
+          </form>
         </div>
 
 			</center>
@@ -76,8 +75,8 @@
 		function initMap() {
 			var mapDiv = document.getElementById('map');
 			var map = new google.maps.Map(mapDiv, {
-				center: {lat: 44.5638754, lng: -123.2798948},
-				zoom: 14
+				center: {lat: 44.563875, lng: -123.279895},
+				zoom: 16
 			});
 		}
 		</script>

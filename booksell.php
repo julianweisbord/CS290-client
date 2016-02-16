@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="../CS290-server/server.js"></script>
 
 <html>
   <head>
@@ -27,82 +28,73 @@
     <div class="textbody">
 
       <div class="ui form">
-        <div class="fields book">
-          <div class="field">
-            <label>Subject</label>
-            <input type="text" placeholder="e.g. MTH or math">
-          </div>
-          <div class="field">
-            <label>Course Number</label>
-            <input type="text" placeholder="e.g. 111">
-          </div>
-          <div class="field">
-            <label>Book Title</label>
-            <input type="text" placeholder="Book Title">
-          </div>
-          <div class="field">
-            <label>Author</label>
-            <input type="text" placeholder="Author">
-          </div>
-          <div class="field">
-            <label>Price</label>
-            <input type="text" placeholder="Price">
-          </div>
-          <div class="field">
-            <label>ISBN Number</label>
-            <input type="text" placeholder="ISBN">
-          </div>
-        </div>
-        <div>
-          <label>Photos</label>
-          <div class="ui card">
-            <div class="image">
-              <img src="http://semantic-ui.com/images/wireframe/image.png">
-            </div>
-            <div class="extra content">
-              <a>
-                <i class="plus icon"></i>
-                Add Photo
-              </a>
-            </div>
-          </div>
-          <div class="grouped fields">
-            <label>Book Condition:</label>
+        <form action="./yourbooks.php" method="GET">
+          <div class="fields book">
             <div class="field">
-              <div class="ui radio checkbox">
-                <input type="radio" name="condition">
-                <label>Excellent</label>
+              <label>Subject</label>
+              <input type="text" placeholder="e.g. MTH or math">
+            </div>
+            <div class="field">
+              <label>Course Number</label>
+              <input type="text" placeholder="e.g. 111">
+            </div>
+            <div class="field">
+              <label>Book Title</label>
+              <input type="text" placeholder="Book Title">
+            </div>
+            <div class="field">
+              <label>Author</label>
+              <input type="text" placeholder="Author">
+            </div>
+            <div class="field">
+              <label>Price</label>
+              <input type="text" placeholder="Price">
+            </div>
+            <div class="field">
+              <label>ISBN Number</label>
+              <input type="text" placeholder="ISBN">
+            </div>
+          </div>
+          <div>
+            <div class="grouped fields">
+              <label>Book Condition:</label>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="condition">
+                  <label>Excellent</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="condition">
+                  <label>Good</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="condition">
+                  <label>Fair</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="condition">
+                  <label>Poor</label>
+                </div>
               </div>
             </div>
             <div class="field">
-              <div class="ui radio checkbox">
-                <input type="radio" name="condition">
-                <label>Good</label>
-              </div>
+              <label>Book Description</label>
+              <input type="text">
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input type="radio" name="condition">
-                <label>Fair</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input type="radio" name="condition">
-                <label>Poor</label>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label>Book Description</label>
-            <input type="text">
-          </div>
+          </form>
         </div>
 
         <br>
         <button class="ui positive button">
           <p>Submit</p>
         </button>
+      </form>
       </div>
 
     </div>

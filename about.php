@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>About</title>
@@ -38,7 +37,27 @@
         <h2><u>About the Creators</u></h2>
         <h3>We are all undergrad students taking a Web Development course at Oregon State University.</h3>
         <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5685.543422677905!2d-123.2750304710189!3d44.56077668660508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa6fff1dc01f7b49f!2sOregon+State+University!5e0!3m2!1sen!2sus!4v1455507631914" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="map"></div>
+        <script>
+        function initMap() {
+          var myLatLng = {lat: 44.5638754, lng: -123.2798948};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+          });
+
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Where We Are From'
+          });
+        }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+          async defer></script>
+
         <br>
       </div></center>
 
