@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE html>
 <html>
   <head>
     <title>About</title>
@@ -32,8 +31,42 @@
         <h3>Omeed Habibelahian</h3>
         <h3>Benny Wick</h3>
         <h3>Andrew Davis</h3>
+<<<<<<< HEAD:html/about.html
 
+=======
+        <h3>Brennan Giles</h3>
+
+        <br>
+
+        <h2><u>About the Creators</u></h2>
+        <h3>We are all undergrad students taking a Web Development course at Oregon State University.</h3>
+        <br>
+        <div id="map"></div>
+        <script>
+        function initMap() {
+          var myLatLng = {lat: 44.5638754, lng: -123.2798948};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+          });
+
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Where We Are From'
+          });
+        }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+          async defer></script>
+
+        <br>
+>>>>>>> origin/master:about.php
       </div></center>
+
+
 
 
     </div>
