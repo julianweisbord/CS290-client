@@ -16,9 +16,6 @@
     <br><br>
     <left class="sitename"> BEAVERBOOKS </left>
 
-  <!--    <div>
-        <center><h2><strong>Find a book you need, or sell your old one!</h2></strong></center>
-      </div> -->
     <div>
       <ul class="navbar">
         <li class="active"><a href="./home.php">Home</a></li>
@@ -51,9 +48,9 @@
 					?>
 					<div class="column">
 						<div class="ui card books" data-content="Edit" data-variation="basic">
-							<div class="image crop">
+						<!--	<div class="image crop">
 								<img src="http://cdn.innovativelanguage.com/wordlists/media/thumb/14441_fit512.jpg">
-							</div>
+							</div> -->
 							<div class="content">
 								<div class="header">Example Book</div>
 								<div class="meta">

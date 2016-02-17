@@ -32,27 +32,27 @@
           <div class="fields book">
             <div class="field">
               <label>Subject</label>
-              <input type="text" placeholder="e.g. MTH or math">
+              <input type="text" name="subject" placeholder="e.g. MTH or math">
             </div>
             <div class="field">
               <label>Course Number</label>
-              <input type="text" placeholder="e.g. 111">
+              <input type="text" name="coursenum" placeholder="e.g. 111">
             </div>
             <div class="field">
               <label>Book Title</label>
-              <input type="text" placeholder="Book Title">
+              <input type="text" name="booktitle" placeholder="Book Title">
             </div>
             <div class="field">
               <label>Author</label>
-              <input type="text" placeholder="Author">
+              <input type="text" name="author" placeholder="Author">
             </div>
             <div class="field">
               <label>Price</label>
-              <input type="text" placeholder="Price">
+              <input type="text" name="price" placeholder="Price">
             </div>
             <div class="field">
               <label>ISBN Number</label>
-              <input type="text" placeholder="ISBN">
+              <input type="text" name="isbn" placeholder="ISBN">
             </div>
           </div>
           <div>
@@ -60,41 +60,40 @@
               <label>Book Condition:</label>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition">
+                  <input type="radio" name="condition" value="4">
                   <label>Excellent</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition">
+                  <input type="radio" name="condition" value="3">
                   <label>Good</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition">
+                  <input type="radio" name="condition" value="2">
                   <label>Fair</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition">
+                  <input type="radio" name="condition" value="1">
                   <label>Poor</label>
                 </div>
               </div>
             </div>
             <div class="field">
               <label>Book Description</label>
-              <input type="text">
+              <input type="text" name="description">
             </div>
-          </form>
-        </div>
+          </div>
 
-        <br>
-        <button class="ui positive button">
-          <p>Submit</p>
-        </button>
-      </form>
+          <br>
+          <button class="ui positive button">
+            <p>Submit</p>
+          </button>
+        </form>
       </div>
 
     </div>

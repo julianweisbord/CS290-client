@@ -36,9 +36,6 @@
 				?>
 				<div class="column">
 					<div class="ui card books" data-content="Edit" data-variation="basic">
-						<div class="image crop">
-							<img src="http://cdn.innovativelanguage.com/wordlists/media/thumb/14441_fit512.jpg">
-						</div>
 						<div class="content">
 							<div class="header">Example Book <script> document.write(i+1) </script></div>
 							<div class="meta">
