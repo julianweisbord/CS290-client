@@ -12,11 +12,11 @@
 
     <ul class="navbar">
       <li><a href="./home.php">Home</a></li>
-      <li class="active"><a href="./yourbooks.html">Your Books</a></li>
+      <li class="active"><a href="./yourbooks.php">Your Books</a></li>
       <li><a href="./booksell.html">Sell A Book</a></li>
       <li><a href="./searchpage.html">Search Books</a></li>
       <li><a href="./locationpage.html">Books Near You</a></li>
-      <li><a href="./about.php">About</a></li>
+      <li><a href="./about.html">About</a></li>
       <li style="float:right"><a href="./logout.html">Logout</a></li>
     </ul>
 
@@ -65,7 +65,7 @@
           <p>Sell A Book</p>
         </button>
       </a>
-      <a href="./yourbooks.html">
+      <a href="./yourbooks.php">
         <button class="circular ui icon button two">
           <i class="book icon"></i>
           <p>Your Books</p>

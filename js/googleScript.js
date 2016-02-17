@@ -3,7 +3,7 @@ function map(version) {
 // if version 1, then it is current location, if 2, it is at zip code
 
 
-if (version == 1){
+if (version === 1){
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -37,13 +37,14 @@ function showError(error) {
           }
     }
   }
+
 }
 
 
 
 
 
-if (version == 2){
+if (version === 2){
 
 var zip;
 zip = document.getElementById("zip").value;

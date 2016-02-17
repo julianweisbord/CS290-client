@@ -13,7 +13,7 @@
 
     <ul class="navbar">
       <li><a href="./home.php">Home</a></li>
-      <li><a href="./yourbooks.html">Your Books</a></li>
+      <li><a href="./yourbooks.php">Your Books</a></li>
       <li class="active"><a href="./booksell.html">Sell A Book</a></li>
       <li><a href="./searchpage.html">Search Books</a></li>
       <li><a href="./locationpage.html">Books Near You</a></li>
@@ -28,31 +28,31 @@
     <div class="textbody">
 
       <div class="ui form">
-        <form action="./yourbooks.php" method="GET">
+        <form action="./yourbooks.html" method="GET">
           <div class="fields book">
             <div class="field">
               <label>Subject</label>
-              <input type="text" name="subject" placeholder="e.g. MTH or math">
+              <input type="text" id="subject" placeholder="e.g. MTH or math">
             </div>
             <div class="field">
               <label>Course Number</label>
-              <input type="text" name="coursenum" placeholder="e.g. 111">
+              <input type="text" id="coursenum" placeholder="e.g. 111">
             </div>
             <div class="field">
               <label>Book Title</label>
-              <input type="text" name="booktitle" placeholder="Book Title">
+              <input type="text" id="booktitle" placeholder="Book Title">
             </div>
             <div class="field">
               <label>Author</label>
-              <input type="text" name="author" placeholder="Author">
+              <input type="text" id="author" placeholder="Author">
             </div>
             <div class="field">
               <label>Price</label>
-              <input type="text" name="price" placeholder="Price">
+              <input type="text" id="price" placeholder="Price">
             </div>
             <div class="field">
               <label>ISBN Number</label>
-              <input type="text" name="isbn" placeholder="ISBN">
+              <input type="text" id="isbn" placeholder="ISBN">
             </div>
           </div>
           <div>
@@ -60,32 +60,32 @@
               <label>Book Condition:</label>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition" value="4">
+                  <input type="radio" id="condition" value="4">
                   <label>Excellent</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition" value="3">
+                  <input type="radio" id="condition" value="3">
                   <label>Good</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition" value="2">
+                  <input type="radio" id="condition" value="2">
                   <label>Fair</label>
                 </div>
               </div>
               <div class="field">
                 <div class="ui radio checkbox">
-                  <input type="radio" name="condition" value="1">
+                  <input type="radio" id="condition" value="1">
                   <label>Poor</label>
                 </div>
               </div>
             </div>
             <div class="field">
               <label>Book Description</label>
-              <input type="text" name="description">
+              <input type="text" id="description">
             </div>
           </div>
 

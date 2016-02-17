@@ -19,7 +19,7 @@
     <div>
       <ul class="navbar">
         <li class="active"><a href="./home.php">Home</a></li>
-				<li><a href="./yourbooks.html">Your Books</a></li>
+				<li><a href="./yourbooks.php">Your Books</a></li>
         <li><a href="./booksell.html">Sell A Book</a></li>
         <li><a href="./searchpage.html">Search Books</a></li>
         <li><a href="./locationpage.html">Books Near You</a></li>
@@ -87,7 +87,7 @@
 			</script>
 
 			<div class="quicknav">
-				<a href="./booksell.php">
+				<a href="./booksell.html">
 					<button class="circular ui icon button one">
 						<i class="plus icon"></i>
 						<p>Sell A Book</p>
@@ -99,13 +99,13 @@
 						<p>Your Books</p>
 					</button>
 				</a>
-				<a href="./searchpage.php">
+				<a href="./searchpage.html">
 					<button class="circular ui icon button three">
 						<i class="search icon"></i>
 						<p>Search</p>
 					</button>
 				</a>
-				<a href="./locationpage.php">
+				<a href="./locationpage.html">
 					<button class="circular ui icon button four">
 						<i class="location arrow icon"></i>
 						<p>Near You</p>
