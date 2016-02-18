@@ -2,6 +2,7 @@
 <script type="text/javascript" src="./js-samples"></script>
 <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="./js-samples/geolocate/geometa.js"></script>
+<script type="text/javascript" src="../CS290-server/server.js"></script>
 
 <html>
   <head>
@@ -59,7 +60,7 @@
         where people are selling their books</p>
 
         <div class="ui form">
-          <button class="ui positive button" id="current" onclick="map(1)" value="Current Location">Current Location</button>
+          <button class="ui positive button" id="current" onclick="showmap(1)">Current Location</button>
           <br><br>
           <div class="ui basic label">OR</div>
           <br><br>
@@ -67,7 +68,7 @@
             <label>Zip Code</label>
             <input type="text" placeholder="Zip Code" id="zip">
           </div>
-          <button class = "ui positive button" onclick="map(2)">Submit</button>
+          <button class="ui positive button" onclick="showmap(2)">Submit</button>
 
         </div></center>
     </div>
@@ -78,13 +79,18 @@
       var mapDiv = document.getElementById("map");
       var map = new google.maps.Map(mapDiv, {
         center: {lat: 44.563875, lng: -123.279895},
-        zoom: 16
+        zoom: 17,
+      });
+      var marker = new google.maps.Marker({
+        position: map.center,
+        map: map,
+        title: 'You Are Here'
       });
       return map;
     }
 
-    function map(version) {
-      document.write("function called");
+    /*function showmap(version) {
+      alert("function called");
       var map = initMap();
       if (version === 1) {
         map.center = getLocation();
@@ -107,7 +113,7 @@
       map.zoom: 17;
     }
 
-    /*function getLocation() {
+    function getLocation() {
         if (navigator.geolocation) {
             var latlng = navigator.geolocation.getCurrentPosition(getPosition, showError);
         } else {
@@ -141,7 +147,7 @@
       }
     }
 
-    function map(version) {
+    /*function map(version) {
       var lat = 0;
       var lng = 0;
       if (version == 1) {
