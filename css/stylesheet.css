@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
-* {
-  font-family: 'Lato';
-}
-body{
-background-color: #808080;
-}
+* {font-family: 'Lato'}
+
+body {background-color: #808080}
 
 .sitename {
   font-size: 5em;
@@ -20,9 +17,6 @@ height: 50px;
 }
 
 .textbody{
-/*border-radius: 2em;*/
-/*border:solid black;
-background-color: #D3D3D3;*/
 margin-left: auto;
 margin-right: auto;
 padding-top: 1em;
@@ -30,8 +24,6 @@ padding-bottom: 2em;
 padding-left: 2em;
 padding-right: 2em;
 width: 50em;
-
-/*font-family: 'Lato', sans-serif;*/
 font-size: 20px;
 }
 
@@ -50,8 +42,6 @@ font-size: 20px;
 .fields.book {margin: auto}
 
 .ui.card.books {margin: auto}
-
-
 
 .quicknav {
   position: fixed;
@@ -74,8 +64,7 @@ font-size: 10em;
 margin-bottom: -0.2em;
 }
 
- a{
-  text-decoration:none;
+a {text-decoration:none
 }
 /*ul code below used for Navbar config, and allows ul in other locations
 to not be affected by these presets*/
