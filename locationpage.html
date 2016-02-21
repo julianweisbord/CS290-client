@@ -11,27 +11,28 @@
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
     <script type="text/javascript" src="./map.js"></script>
     <script>
-
-    $("#current").click(function() {
-      var map = initMap();
-      map.center = getLocation();
-    });
-
-    $("#submit").click(function() {
-      var map = initMap();
-      var zip = document.getElementById("zip").value;
-      var lat = '';
-      var lng = '';
-
-      geocoder.geocode( {'address': zip}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-          lat = results[0].geometry.location.lat();
-          lng = results[0].geometry.location.lng();
-        }
-        else alert("Geocode was not successful for the following reason: " + status);
+    $(document).ready(function() {
+      $("#current").click(function() {
+        var map = initMap();
+        map.center = getLocation();
       });
-      var latLng = new google.maps.LatLng(lat, lng);
-      map.center = latLng;
+
+      $("#submit").click(function() {
+        var map = initMap();
+        var zip = document.getElementById("zip").value;
+        var lat = '';
+        var lng = '';
+
+        geocoder.geocode( {'address': zip}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+          }
+          else alert("Geocode was not successful for the following reason: " + status);
+        });
+        var latLng = new google.maps.LatLng(lat, lng);
+        map.center = latLng;
+      });
     });
 
     </script>
