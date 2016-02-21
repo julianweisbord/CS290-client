@@ -9,6 +9,32 @@
     <title>Books Near You</title>
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
+    <script type="text/javascript" src="./map.js"></script>
+    <script>
+
+    $("#current").click(function() {
+      var map = initMap();
+      map.center = getLocation();
+    });
+
+    $("#submit").click(function() {
+      var map = initMap();
+      var zip = document.getElementById("zip").value;
+      var lat = '';
+      var lng = '';
+
+      geocoder.geocode( {'address': zip}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          lat = results[0].geometry.location.lat();
+          lng = results[0].geometry.location.lng();
+        }
+        else alert("Geocode was not successful for the following reason: " + status);
+      });
+      var latLng = new google.maps.LatLng(lat, lng);
+      map.center = latLng;
+    });
+
+    </script>
   </head>
   <body>
 		<div class="quicknav">
@@ -60,7 +86,7 @@
         where people are selling their books</p>
 
         <div class="ui form">
-          <button class="ui positive button" id="current" onclick="showmap(1)">Current Location</button>
+          <button class="ui positive button" id="current">Current Location</button>
           <br><br>
           <div class="ui basic label">OR</div>
           <br><br>
@@ -68,14 +94,14 @@
             <label>Zip Code</label>
             <input type="text" placeholder="Zip Code" id="zip">
           </div>
-          <button class="ui positive button" onclick="showmap(2)">Submit</button>
-
+          <button class="ui positive button" id="submit">Submit</button>
         </div></center>
     </div>
 
     <div id="map"></div>
-    <script>
+    <!-- <script>
     function initMap() {
+      alert("in initMap");
       var mapDiv = document.getElementById("map");
       var map = new google.maps.Map(mapDiv, {
         center: {lat: 44.563875, lng: -123.279895},
@@ -111,7 +137,30 @@
         map.center = latLng;
       }
       map.zoom: 17;
-    }
+    }*/
+
+    $("#current").click(function() {
+      var map = initMap();
+      map.center = getLocation();
+      var map = initMap();
+
+    });
+
+    $("#submit").click(function() {
+      var zip = document.getElementById("zip").value;
+      var lat = '';
+      var lng = '';
+
+      geocoder.geocode( {'address': zip}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          lat = results[0].geometry.location.lat();
+          lng = results[0].geometry.location.lng();
+        }
+        else alert("Geocode was not successful for the following reason: " + status);
+      });
+      var latLng = new google.maps.LatLng(lat, lng);
+      map.center = latLng;
+    });
 
     function getLocation() {
         if (navigator.geolocation) {
