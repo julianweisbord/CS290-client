@@ -9,12 +9,15 @@
     <title>Books Near You</title>
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
+    <link href="./js-samples/geolocate/geolocate.html"/>
     <script type="text/javascript" src="./map.js"></script>
     <script>
+
     $(document).ready(function() {
       $("#current").click(function() {
         var map = initMap();
-        map.center = getLocation();
+        prepareGeolocation();
+        doGeolocation();
       });
 
       $("#submit").click(function() {
