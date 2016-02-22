@@ -33,6 +33,13 @@ font-size: 20px;
 .circular.ui.icon.button.three {background: #98FB98}
 .circular.ui.icon.button.four {background: #FFFF00}
 
+.phone.icon.square.green {zoom: 200%}
+.mail.square.icon {zoom: 200%}
+.facebook.icon.square.book {
+  zoom: 200%;
+  color: #3B5998
+}
+
 #map {
   margin: auto;
   width: 1000px;

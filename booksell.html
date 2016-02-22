@@ -6,6 +6,25 @@
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
     <script type="text/javascript" src="../CS290-server/server.js"></script>
+    <script>
+
+    $(document).ready(function() {
+      $("#posting").submit(function(event) {
+        if (document.getElementById("phone").value == undefined) {
+          if (document.getElementById("email").value == undefined) {
+            if (document.getElementById("facebook").value == undefined) {
+              alert("you must provide a method of contact");
+              event.preventDefault();
+            }
+            //else return true;
+          }
+          //else return true;
+        }
+        //else return true;
+      });
+    });
+
+    </script>
   </head>
   <body>
     <br><br>
@@ -28,7 +47,7 @@
     <div class="textbody">
 
       <div class="ui form">
-        <form action="./yourbooks.php" method="GET">
+        <form action="./yourbooks.php" method="GET" id="posting">
           <div class="fields book">
             <div class="field">
               <label>Subject</label>
@@ -85,7 +104,28 @@
             </div>
             <div class="field">
               <label>Book Description</label>
-              <input type="text" id="description">
+              <input type="text" id="description" placeholder="Book Description">
+            </div>
+            <div class="field">
+              <label>Contact Info</label>
+              <div class="field">
+                <div style="display:inline-block">
+                  <i class="phone icon square green"></i>
+                  <input type="text" placeholder="Phone Number" id="phone">
+                </div>
+              </div>
+              <div class="field">
+                <div style="display:inline-block">
+                  <i class="mail square icon"></i>
+                  <input type="text" placeholder="Email Address" id="email">
+                </div>
+              </div>
+              <div class="field">
+                <div style="display:inline-block">
+                  <i class="facebook icon square book"></i>
+                  <input type="text" placeholder="Facebook URL" id="facebook">
+                </div>
+              </div>
             </div>
           </div>
 
