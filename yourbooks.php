@@ -5,6 +5,8 @@
     <title>Sell Your Book</title>
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min,js"></script>
+
   </head>
   <body>
     <br><br>
@@ -66,11 +68,11 @@
             </div>
 						<div class="extra content" style="margin:auto">
               <button class="ui basic blue button">Edit</button>
-              <button class="ui basic red button">Delete</button>
+              <button class="ui basic red button" id="delete">Delete</button>
 						</div>
 					</div>
 				</div>
-				<script> i++ </script>
+        <script> i++ </script>
 				<?php } ?>
 			</div>
 		</div>
