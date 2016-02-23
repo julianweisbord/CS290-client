@@ -37,7 +37,7 @@
 				<div class="column">
 					<div class="ui card books" data-content="Edit" data-variation="basic">
 						<div class="content">
-							<div class="header">Example Book <script> document.write(i+1) </script></div>
+							<div class="header">Your Book <script> document.write(i+1) </script></div>
 							<div class="meta">
 								<span class="date">Posted: February <script> document.write(dates[i]) </script>, 2016</span>
 							</div>
@@ -46,8 +46,27 @@
 							</div>
 							<h3>$<script> document.write(prices[i]) </script></h3>
 						</div>
-						<div class="extra content">
-							<a><b>Edit</b></a>
+            <div class="extra content">
+              Contact Info
+              <div class="ui divider"></div>
+              <div class="content">
+                <p>
+                  <i class="phone icon square" style="zoom:150%"></i>
+                  <script> document.write("(555) 222-2345") </script>
+                </p>
+                <p>
+                  <i class="mail icon square" style="zoom:150%"></i>
+                  <script> document.write("fakeemail2@lolsofake.com") </script>
+                </p>
+                <p>
+                  <i class="facebook icon square" style="zoom:150%"></i>
+                  <script> document.write("-") </script>
+                </p>
+              </div>
+            </div>
+						<div class="extra content" style="margin:auto">
+              <button class="ui basic blue button">Edit</button>
+              <button class="ui basic red button">Delete</button>
 						</div>
 					</div>
 				</div>

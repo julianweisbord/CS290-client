@@ -11,6 +11,18 @@
     <title>BeaverBooks</title>
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
     <link type="text/css" rel="stylesheet" href="./bower_components/semantic/dist/semantic.css"/>
+		<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../CS290-server/server.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+
+		$(document).ready(function() {
+			$("#bookinfo").accordion({
+				collapsible: true;
+			});
+		});
+
+		</script>
   </head>
   <body>
     <br><br>
@@ -39,7 +51,7 @@
 				var i = 0;
 				</script>
 				<?php
-				$x = 13;
+				$x = 21;
 				for ($i = 0; $i < 4; $i++) {
 				?>
 				<div class="four column row">
@@ -59,7 +71,23 @@
 								<h3>$<script> document.write(prices[i]) </script></h3>
 							</div>
 							<div class="extra content">
-								<a><b>View Book</b></a>
+							<!--	<i class="dropdown icon"></i> -->
+								Contact Info
+								<div class="ui divider"></div>
+								<div class="content">
+									<p>
+										<i class="phone icon square" style="zoom:150%"></i>
+										<script> document.write("(555) 111-1234") </script>
+									</p>
+									<p>
+										<i class="mail icon square" style="zoom:150%"></i>
+										<script> document.write("fakeemail@lolsofake.com") </script>
+									</p>
+									<p>
+										<i class="facebook icon square" style="zoom:150%"></i>
+										<script> document.write("-") </script>
+									</p>
+  							</div>
 							</div>
 						</div>
 					</div>
